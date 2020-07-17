@@ -1,0 +1,82 @@
+﻿@model finalmawjoud_nlh.Models.Images
+
+@{
+    ViewBag.Title = "DetailsImages";
+}
+
+<h2>DetailsImages</h2>
+
+<div>
+    <h4>Images</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SlideImageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SlideImageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SlideImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SlideImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MenuImageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MenuImageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MenuImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MenuImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountImageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountImageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.otherImageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.otherImageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherImage)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ImageId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
